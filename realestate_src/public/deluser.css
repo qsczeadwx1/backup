@@ -1,0 +1,6 @@
+#confirmBtn {
+    background-color: rgb(212, 0, 0);
+}
+#confirmBtn:hover {
+    background-color: #b10000;
+}

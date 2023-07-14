@@ -1,0 +1,103 @@
+/* 가로스크롤 사진 + 정보 */
+.scroll-item {
+  overflow-x: auto;
+  white-space: nowrap;
+  width: 100%;
+  height: 20rem;
+}
+
+.photo-item {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  min-width: 250px;
+  max-width: 400px;
+  height: 250px;
+  border: 1px solid black;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.photo-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 5px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.scroll-container::-webkit-scrollbar {
+  width: 8px; /* 스크롤 막대의 너비 */
+  background-color: #ACBCFF; /* 스크롤 배경색 */
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+  height: 30%; /* 스크롤바의 길이 */
+    background: #AEE2FF; /* 스크롤바의 색상 */
+    border-radius: 5px;
+}
+
+.scroll-container1::-webkit-scrollbar {
+  width: 8px; /* 스크롤 막대의 너비 */
+  background-color: #67676d; /* 스크롤 배경색 */
+}
+
+.scroll-container1::-webkit-scrollbar-thumb {
+  height: 30%; /* 스크롤바의 길이 */
+    background: #11264f; /* 스크롤바의 색상 */
+    border-radius: 5px;
+}
+
+
+/* 아코디언 */
+.accordion .accordion-item:not(:last-child) {
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.accordion .accordion-item2:not(:last-child) {
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.accordion .accordion-title {
+  cursor: pointer;
+}
+
+.accordion .accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-in-out;
+}
+
+.accordion .accordion-item.active .accordion-content {
+  max-height: 1000px;
+  transition: max-height 0.35s ease-in-out;
+}
+
+.accordion .accordion-item2.active2 .accordion-content {
+  max-height: 1000px;
+  transition: max-height 0.35s ease-in-out;
+}
+
+/* 다크모드 이미지 */
+.dark-bg-image-1 {
+  height: 40vh;
+  text-align: center;
+  background-image: url('/abcdf.png');
+  background-size: cover;
+}
+
+.dark-bg-image-2 {
+  height: 40vh;
+  text-align: center;
+  background-image: url('/abcd.png');
+  background-size: cover;
+}
